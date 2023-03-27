@@ -1,16 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { WeatherServiceService } from '../services/weather-service.service';
 
 @Component({
   selector: 'app-city2',
   templateUrl: './city2.component.html',
-  styleUrls: ['./city2.component.css']
+  styleUrls: ['./city2.component.css'],
 })
-export class City2Component {
-
-  constructor(private weatherService:WeatherServiceService, private router: Router){}
-  cityName:string = 'Cairo';
+export class City2Component implements OnInit {
+  constructor(
+    private weatherService: WeatherServiceService,
+    private router: Router
+  ) {}
+  ngOnInit(): void {
+    this.getWeatherData();
+  }
+  cityName: string = 'Cairo';
   temp: number = 0;
   temp_min: number = 0;
   temp_max: number = 0;

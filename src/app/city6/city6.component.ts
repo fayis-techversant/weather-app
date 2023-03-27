@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { WeatherServiceService } from '../services/weather-service.service';
 
@@ -7,11 +7,14 @@ import { WeatherServiceService } from '../services/weather-service.service';
   templateUrl: './city6.component.html',
   styleUrls: ['./city6.component.css'],
 })
-export class City6Component {
+export class City6Component implements OnInit {
   constructor(
     private weatherService: WeatherServiceService,
     private router: Router
   ) {}
+  ngOnInit(): void {
+    this.getWeatherData();
+  }
   cityName: string = 'London';
   temp: number = 0;
   temp_min: number = 0;
