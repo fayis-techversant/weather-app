@@ -1,0 +1,11 @@
+.details-main{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(123, 123, 222);
+    height: 100%;
+}
+.details-main .container{
+    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
+}

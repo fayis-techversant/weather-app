@@ -1,1 +1,154 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    /* background-color: darkgray; */
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container-main {
+    width: 300px;
+    height: 40vh;
+    background-color: rgb(42, 97, 224);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 2rem;
+}
+
+.container-main .upperdata {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.container {
+    width: 300px;
+    height: 90vh;
+    background-color: rgb(42, 97, 224);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.upperdata {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 55%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.upperdata img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.weather-data {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    /* background-color: azure; */
+    display: flex;
+    flex-direction: column;
+    color: rgb(240, 248, 255);
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-data p {
+    margin-top: 2.5rem;
+    font-size: small;
+}
+
+.location {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.temp {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.more-info-label {
+    color: white;
+    text-align: center;
+    margin: .5rem 0;
+}
+
+.more-info-container {
+    flex: 1;
+    background-color: rgb(107, 145, 234);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: .5rem;
+    padding: .5rem 1rem;
+    color: white;
+}
+
+.more-info-container p {
+    font-weight: 700;
+    color: darkslategrey;
+}
+
+.info-block {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin: 1rem 0;
+}
+
+.info-block-label {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.info-block-label img {
+    width: 2.5rem;
+}
+
+.info-block-label span {
+    color: white;
+    font-size: 0.8rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-block-value {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}

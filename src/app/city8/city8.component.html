@@ -1,0 +1,13 @@
+<a routerLink="/details" [queryParams]="{ cityName: cityName }">
+  <div class="container-main" (click)="navigate()">
+    <div class="upperdata">
+      <img src="../assets/winter.jpg" alt="" *ngIf="temp < 15" />
+      <img src="../assets/summer.jpg" alt="" *ngIf="temp >= 15" />
+      <div class="weather-data">
+        <div class="city">{{ cityName }}</div>
+        <div class="temp">{{ temp | number : "1.0-0" }}&deg;C</div>
+        <p>Click to see more details</p>
+      </div>
+    </div>
+  </div>
+</a>

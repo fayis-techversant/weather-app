@@ -1,0 +1,30 @@
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(2, 2, 69);
+    color: whitesmoke;
+    padding: 2rem;
+    box-shadow: 10px 10px 10px rgba(99, 100, 147, 0.3);
+
+}
+.nav-logo{
+    font-size: x-large;
+    font-weight: 800;
+}
+.search-box{
+    margin-top: 2rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.search-box input{
+    width: 100%;
+    padding: .8rem;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background-color: rgb(222, 217, 217);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+
+}
